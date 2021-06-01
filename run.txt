@@ -1,0 +1,10 @@
+COMMAND
+
+
+//input video
+ python3 object_counter.py --prototxt mobilenet_ssd/MobileNetSSD_deploy.prototxt \
+	--model mobilenet_ssd/MobileNetSSD_deploy.caffemodel --input videos/example_01.mp4
+
+//input webcam
+python3 object_counter.py --prototxt mobilenet_ssd/MobileNetSSD_deploy.prototxt \
+	--model mobilenet_ssd/MobileNetSSD_deploy.caffemodel

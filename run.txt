@@ -1,5 +1,6 @@
 COMMAND
 
+#MAIN script with DDN
 
 //input video
  python3 object_counter.py --prototxt mobilenet_ssd/MobileNetSSD_deploy.prototxt \
@@ -8,3 +9,7 @@ COMMAND
 //input webcam
 python3 object_counter.py --prototxt mobilenet_ssd/MobileNetSSD_deploy.prototxt \
 	--model mobilenet_ssd/MobileNetSSD_deploy.caffemodel
+
+
+#LITE version
+python3 object_counter_lite.py
